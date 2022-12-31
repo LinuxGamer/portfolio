@@ -1,10 +1,113 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Portfolio</title>
+  <title>LinuxGamer | Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+    /* Custom styles for this template https://source.unsplash.com/1600x900/?art */
+    .jumbotron {
+      background-image: url('assets/top-bg.png');
+      background-size: cover;
+      background-position: center;
+    /* background-color: #343a40; */
+      color: #9a98f2;
+    }
+    .jumbotron h1 {
+      font-size: 2rem;
+    }
+    .jumbotron p {
+      font-size: 1.5rem;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    img.avatar {
+  	  border-radius: 50%;
+	    width: 200px;
+	    height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 6px;
+    }
+    img.gallery {
+	    border-radius: 10%;
+	    width: 300px;
+	    height: 200px;
+    }
+    .centered {
+	    text-align: center;
+    }
+    footer {
+        background-image: assets/top-bg.png;
+    }
+  </style>
 </head>
 <body>
-<p>
-<img src="https://avatars.githubusercontent.com/u/83363242?v=4" />
-</p> 
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4">LinuxGamer | Portfolio</h1>
+      <p class="lead">Welcome to the online portfolio of a CJ Creative Studio. Browse through our gallery to see some of our recent works.</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index">CJ Creative Studio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolios/gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>About Us</h2>
+        <p>We are a team of skilled artists with a passion for creating beautiful and unique works of art. Whether you need a portrait, landscape, or abstract piece, we can bring your vision to life.</p>
+      </div>
+      <div class="col-md-8">
+        <h2>Gallery</h2>
+        <p>Here are some of our recent works:</p>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="gallery" src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
+            <p>Portrait of a young girl</p>
+          </div>
+          <div class="col-md-6">
+            <img class="gallery" src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
+            <p>Seascape at sunset</p>
+          </div>
+          <div class="col-md-5">
+            <img class="gallery" src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
+            <p>Abstract geometric shapes</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md" style="text-align: right; padding-right: 30px">
+      <p><b>View our full gallery <a href="/gallery">here</a></b></p>
+    </div>
+  </div>
 </body>
+<footer>
+	<div class="footer">
+		<p>This Site is Hosted on GitHub and uses FormSubmit to create and run the Contact form.</p>
+	</div>
+</footer>
 </html>
